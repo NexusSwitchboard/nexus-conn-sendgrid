@@ -1,7 +1,9 @@
 {
   "name": "@nexus-switchboard/nexus-conn-sendgrid",
   "version": "0.0.1",
-  "keywords": ["nexus-connection"],
+  "keywords": [
+    "nexus-connection"
+  ],
   "description": "Wrapper around a sendgrid client that provides nexus connection interfaces.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -20,7 +22,7 @@
     "assert": "^2.0.0",
     "debug": "^4.1.1",
     "request": "^2.88.0",
-    "@nexus-switchboard/nexus-extend": "^0.4.4"
+    "@nexus-switchboard/nexus-extend": "^0.4"
   },
   "devDependencies": {
     "@types/node": "^12.7.5",

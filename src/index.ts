@@ -1,5 +1,5 @@
 import MailService from "@sendgrid/mail";
-import {Connection, ConnectionConfig} from "@nexus-switchboard/nexus-extend";
+import {Connection, ConnectionConfig, GlobalConfig} from "@nexus-switchboard/nexus-extend";
 
 export type EmailAddress = string | { name?: string; email: string; };
 
@@ -50,6 +50,6 @@ export class SendgridConnection extends Connection {
     }
 }
 
-export default function createConnection(cfg: ConnectionConfig): Connection {
-    return new SendgridConnection(cfg);
+export default function createConnection(cfg: ConnectionConfig, globalCfg: GlobalConfig): Connection {
+    return new SendgridConnection(cfg, globalCfg);
 }
